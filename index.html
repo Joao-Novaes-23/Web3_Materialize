@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS-->
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="blue z-depth-0">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo left"> <i class="material-icons" style="padding-left: 6px;">favorite</i> Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+    
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="active"><a href="sass.html"> <i class="material-icons left">email</i> Sass </a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    
+    <ul id="mobile-demo" class="sidenav">
+        <li class="active"><a href="sass.html"> <i class="material-icons right">email</i> Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+
+    <nav class="blue">
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+    <div class="card-panel blue lighten-2 red-text text-darken-4 z-depth-2 flow-text">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Doloremque, accusamus? Ad, saepe aspernatur blanditiis, vel totam in tempora veritatis natus odit 
+        voluptates inventore, possimus doloribus eaque dignissimos voluptas suscipit eos!
+    </div>
+    <!-- TRUNCATE + HOVERABLE -->
+    <div class="card-panel hoverable red lighten-2 red-text text-darken-4 z-depth-2 flow-text">
+      <h6 class="truncate"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime exercitationem odit aliquam dicta eum tempora at delectus veniam numquam, laudantium voluptas ipsa molestias commodi architecto nulla dolorum qui quod! Est?
+      </h4>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">textsms</i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Completar automaticamente</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BOTÕES -->
+    <a href="#" class="btn waves-effect"> Botão </a> 
+    <a href="#" class="btn red waves-effect waves-purple btn-small"> Botão2 </a> 
+    <a href="#" class="btn orange waves-effect waves-light btn-large"> Botão2 </a> 
+    <a href="#" class="btn light-green waves-effect waves-light"><i class="material-icons left">face</i> Botão3 </a>
+    <a href="#" class="btn-flat waves-effect waves-red"><i class="material-icons right">cloud</i> Botão4 </a>
+
+    <button href="#" type="submit" name="action" class="btn waves-effect btn-small">
+        <i class="material-icons left">home</i> Home
+    </button>
+
+    <a class="btn-floating blue btn-large waves-effect"><i class="material-icons">edit</i></a>
+
+    <div>
+        <div class="fixed-action-btn" style="bottom: 45px; right: 45px;">
+            <a class="btn-floating red btn-large"> <i class="material-icons">edit</i>
+            </a>
+            <ul>
+                <li> <a class="btn-floating blue"> <i class="material-icons">face</i> </a>
+                </li>
+                <li> <a class="btn-floating blue"> <i class="material-icons">face</i> </a>
+                </li>
+                <li> <a class="btn-floating blue"> <i class="material-icons">face</i> </a>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.fixed-action-btn');
+                    var instances = M.FloatingActionButton.init(elems, {
+                    direction: 'up'
+                    });
+                }); 
+        </script>
+    </div>
+
+    <blockquote>
+        <h5>This is an example quotation that uses the blockquote tag.</h5>
+    </blockquote>
+
+    <img src="wolf.png" class="responsive-img circle">
+
+    <div class="card-panel green lighten-2 orange-text text-darken-4 z-depth-5">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Doloremque, accusamus? Ad, saepe aspernatur blanditiis, vel totam in tempora veritatis natus odit 
+        voluptates inventore, possimus doloribus eaque dignissimos voluptas suscipit eos!
+    </div>
+
+    <table class="bordered striped highlight centered">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col s4 m6 l7 red">4</div>
+        <div class="col s4 m5 l3 green">4</div>
+        <div class="col s4 m1 l2 blue">4</div>
+      </div>
+
+      <div class="row container">
+        <div class="col s10 red">coluna 01</div>
+        <div class="col s2 green">coluna 02</div>
+        <div class="col s6 blue">coluna 03</div> 
+      </div>
+
+      <div class="row">
+        <div class="col s12 red">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis eligendi quas, velit suscipit cum quia 
+          hic libero fuga quos eaque illo iure mollitia, voluptas, delectus odio similique quibusdam voluptates?
+        </div>
+  
+        <!-- ofsset-s(num) desloca a coluna 'num' vezes para a direita. Podendo até aumentar a janela do navegador -->
+        <div class="col s6 blue offset-s8"> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis eligendi quas, velit suscipit cum quia 
+          hic libero fuga quos eaque illo iure mollitia, voluptas, delectus odio similique quibusdam voluptates?
+        </div>
+        <div class="col s2 green offset-s1">oi</div>
+        <div class="col s2 orange offset-s2">oi</div>
+        <div class="col s2 pink offset-s3">oi</div>
+      </div>
+  
+      <div class="row">
+        <div class="col s6 red push-s4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis eligendi quas, velit suscipit cum quia 
+          hic libero fuga quos eaque illo iure mollitia, voluptas, delectus odio similique quibusdam voluptates?
+        </div>
+        <div class="col s6 blue pull-s6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis eligendi quas, velit suscipit cum quia 
+          hic libero fuga quos eaque illo iure mollitia, voluptas, delectus odio similique quibusdam voluptates?
+        </div>
+      </div>
+
+      <div class="row hide-on-med-only"> 
+        <div class="col s3 purple left">Purple</div>
+        <div class="col s6 orange right">Orange</div>
+      </div>
+
+      <ul class="collection with-header">
+        <li class="collection-header"> <h4> Pessoas </h4></li> <!-- Item da lista composto por nome. -->
+
+        <li class="collection-item dismissable">    
+            <div> João 
+                <!-- Item da lista composto por ícone com link. -->
+                <a href="" class="secondary-content"> <i class="material-icons"> send </i></a> 
+            </div>
+        </li>
+
+        <li class="collection-item avatar">
+            <i class="material-icons circle">folder</i> Pasta <!-- Avatar e nome -->
+            <span class="title">Title</span>
+                <p> Primeira linha <br>
+                    Segunda linha
+                </p>
+                <a href="" class="secondary-content"> <i class="material-icons"> send </i></a>
+        </li>
+    </ul>
+
+    <div class="collection">
+        <a href="#!" class="collection-item"><span class="badge">1</span>Alan</a>
+        <a href="#!" class="collection-item"><span class="new badge light-green" data-badge-caption=" mensagens">4</span>Alan</a>
+        <a href="#!" class="collection-item">Alan</a>
+        <a href="#!" class="collection-item"><span class="badge">14</span>Alan</a>
+    </div>
+
+    <div class="progress red">
+        <div class="determinate green" style="width: 70%"></div>
+    </div>
+
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="preloader-wrapper big active">
+
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red"> 
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+
+          <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+      </div>
+
+    <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+
+    <footer class="page-footer light red">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 s12">
+              <h5 class="white-text">Follow us.</h5>
+              <p class="grey-text text-lighten-4">Fique por dentro de tudo !!!!!!</p>
+            </div>
+            <div class="col l4 s12">
+              <h5 class="white-text">Menu</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Produtos</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Contatos</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Promoções</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Materialize JS-->
+    <script src="js/materialize.js"></script>
+    <script>
+          $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+      </script>
+      <script>M.AutoInit();</script>
+      <script>
+        $(document).ready(function(){
+          $('input.autocomplete').autocomplete({
+            data: {
+              "Apple": null,
+              "Microsoft": null,
+              "Google": null
+      },
+    });
+  });
+     
+
+      </script>
+</body>
+</html>
